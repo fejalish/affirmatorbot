@@ -1,0 +1,20 @@
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+*.tmp
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# ignore all secrets config files which may be used by kubenetes
+secrets*.yml
+!secrets.sample.yml
+!secrets.env.sample.yml
+
