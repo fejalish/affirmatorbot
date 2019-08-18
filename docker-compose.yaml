@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  go:
+    build: .
+    container_name: go
+    restart: always
+    networks:
+      - backend
+    tty: true
+
+networks:
+  backend:
