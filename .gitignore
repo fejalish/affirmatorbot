@@ -19,3 +19,7 @@
 secrets*.yml
 !secrets.sample.yml
 !secrets.env.sample.yml
+
+.env
+*.env
+!development.env.sample
