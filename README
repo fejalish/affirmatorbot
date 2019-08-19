@@ -47,4 +47,10 @@ kubectl apply -f ./secrets.yaml
 kubectl apply -f ./deployment.yaml
 ```
 
-Note: the deployment uses a published version of the docker image in this repo. If you wish to build and test your own image edit the deployment and set the container image to the name of your local image.
+Note: the deployment uses a published version of the docker image in this repo. If you wish to build and test your own image edit the deployment and set the container image to the name of your local image. You will also need to update minikube to look locally for images.
+
+```
+minikube addons configure registry-creds
+minikube addons enable registry-creds
+eval $(minikube docker-env)
+```
