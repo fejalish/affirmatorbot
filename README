@@ -46,3 +46,5 @@ cd k8s
 kubectl apply -f ./secrets.yaml
 kubectl apply -f ./deployment.yaml
 ```
+
+Note: the deployment uses a published version of the docker image in this repo. If you wish to build and test your own image edit the deployment and set the container image to the name of your local image.
