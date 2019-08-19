@@ -1,0 +1,1 @@
+CREATE DATABASE slackbot_transactions;
