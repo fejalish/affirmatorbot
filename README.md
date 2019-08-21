@@ -1,5 +1,7 @@
 # Affirmator affirms you!
 
+For those days when you just need to be told that you're a good person and, dangit, people like you.
+
 ```
 @Affirmator tell me I'm beautiful
 @Affirmator tell me I'm awesome incarnate
