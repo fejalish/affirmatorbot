@@ -6,6 +6,12 @@
 @Affirmator tell me I'm a good person and people like me
 ```
 
+You could even go to the dark side...
+
+```
+@Affirmator tell me I'm a lazy, piece of...
+```
+
 # Setup
 
 The slackbot container needs a `SLACK_BOT_TOKEN` ENV var to run. This value must be the "Bot User OAuth Access Token" from your Slack app.
