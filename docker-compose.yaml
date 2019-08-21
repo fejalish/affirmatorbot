@@ -7,10 +7,18 @@ services:
     restart: always
     networks:
       - backend
+    links:
+      - db
+    depends_on:
+      - db
     env_file:
       - development.env
-    # environment:
-    #   DEBUG: "true"
+    environment:
+      # DEBUG: "true"
+      PGHOST: db
+      PGUSER: postgres
+      PGDATABASE: postgres
+      PGPASSWORD: SuperSecret
   db:
     image: postgres:11-alpine
     container_name: db
@@ -18,9 +26,22 @@ services:
     ports:
         - 5432
     environment:
+        POSTGRES_USER: postgres
         POSTGRES_PASSWORD: SuperSecret
     volumes:
         - ./db/seed.sql:/docker-entrypoint-initdb.d/seed.sql
+    networks:
+      - backend
+  dbadmin:
+    image: adminer
+    container_name: dbadmin
+    restart: always
+    ports:
+      - 8080
+    logging:
+      driver: "none"
+    links:
+      - db
     networks:
       - backend
 

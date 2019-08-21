@@ -1,5 +1,7 @@
 
 
+
+
 # Setup
 
 The slackbot container needs a `SLACK_BOT_TOKEN` ENV var to run. This value must be the "Bot User OAuth Access Token" from your Slack app.
@@ -54,3 +56,22 @@ minikube addons configure registry-creds
 minikube addons enable registry-creds
 eval $(minikube docker-env)
 ```
+
+# Improvements
+
+- dependency management
+- testing
+  - linting
+  - post-commit hooks
+  - unit tests
+  - intergation tests
+  - infr tests
+- data store
+  - persistent data storage
+  - migrations
+- deployment
+  - build pipeline
+  - deploy pipeline
+- monitoring
+  - alerting
+
