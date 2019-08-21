@@ -1,6 +1,8 @@
+# Affirmator affirms you!
 
-
-
+@Affirmator tell me I'm beautiful
+@Affirmator tell me I'm awesome incarnate
+@Affirmator tell me I'm a good person and people like me
 
 # Setup
 
@@ -74,4 +76,5 @@ eval $(minikube docker-env)
   - deploy pipeline
 - monitoring
   - alerting
+- go reload for quicker dev...
 
