@@ -31,8 +31,8 @@ Copy `development.env.sample` and save it as `development.env`. Edit the file an
 To run locally via docker-compose run the following commands.
 
 ```
-docker-comopse build
-docker-comopse up
+docker-compose build
+docker-compose up
 ```
 
 # Kubernetes
