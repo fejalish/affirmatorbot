@@ -49,7 +49,7 @@ Copy `k8s/secrets.env.sample` and save it as `k8s/secrets.yaml`.
 echo -n 'slack-token-here' | base64
 ```
 
-Edit the file and put the token as the `slack_bot_token` value.
+Edit the file and put the token as the `slack_bot_token` value. Repeat for the `postgres_password`.
 
 ## Commands
 
