@@ -69,6 +69,13 @@ minikube addons enable registry-creds
 eval $(minikube docker-env)
 ```
 
+To cleanup run the following:
+
+```
+kubectl delete -f ./deployment.yaml
+kubectl delete -f ./secrets.yaml
+```
+
 # Improvements
 
 - dependency management
